@@ -1,0 +1,20 @@
+{
+  "name": "lab-azure-speech-voice-live",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Azure Voice Live API real-time voice agent over WebRTC (browser) with a secure signaling relay.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}

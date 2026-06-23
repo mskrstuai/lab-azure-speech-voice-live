@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Azure Voice Live · WebRTC Lab</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Azure Voice Live <span class="tag">WebRTC</span></h1>
+        <p class="muted" id="meta">Loading…</p>
+      </header>
+
+      <section class="controls">
+        <button id="startBtn" class="btn btn--primary">🎙️ Start talking</button>
+        <button id="stopBtn" class="btn" disabled>⏹ Stop</button>
+        <span id="status" class="status status--idle">idle</span>
+      </section>
+
+      <audio id="remoteAudio" autoplay></audio>
+
+      <section class="transcript" aria-live="polite">
+        <h2>Conversation</h2>
+        <div id="log" class="log"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
